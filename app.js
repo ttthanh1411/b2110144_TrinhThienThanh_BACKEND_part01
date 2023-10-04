@@ -4,6 +4,7 @@ const contactsRouter = require("./app/routes/contact.route");
 const res = require("express/lib/response");
 const app = express();
 const ApiError = require("./app/api-error");
+const contactController = require("./app/controllers/contact.controller");
 app.use(cors());
 app.use(express.json());
 app.get("/", (req, res) =>{
